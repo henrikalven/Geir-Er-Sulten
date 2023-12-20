@@ -1,0 +1,11 @@
+body {
+  background-color: white;
+}
+
+.card {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border-radius: 1em;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}

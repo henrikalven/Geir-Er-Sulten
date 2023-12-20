@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guilty Clicker spill</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="split-nav container">
+      <div class="nav-brand">
+        <h3><a href="#" onclick="giPoeng(100)">Geir Er Sulten</a></h3>
+      </div>
+    </nav>
+
+    <div class="row container">
+      <div class="col-4 col">
+        <div>
+          <h3 class="card-title">
+            Poeng <span class="badge success" id="poeng">0</span>
+          </h3>
+          <p class="card-title">
+            Poeng Per Klikk (PPK)
+            <span class="badge" id="klikkPerPoeng">0</span>
+          </p>
+          <div
+            id="sprite"
+            style="
+              background: url(bilder/mann2.png) 0 0;
+              width: 300px;
+              height: 300px;
+            "
+            class="flex-center row"
+          ></div>
+          <div class="progress margin-bottom">
+            <div id="bar" class="bar striped w-100"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 col"></div>
+      <div class="col-4 col">
+        <div class="store-section">
+          <h3 class="card-title">Butikk</h3>
+          <div id="storeItems" class="paper">
+            <!-- butikk kommer her -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
